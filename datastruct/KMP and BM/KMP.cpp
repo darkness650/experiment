@@ -53,7 +53,7 @@ int main()
 	else out << position;
 	QueryPerformanceCounter(&nEndTime);
 	t = (double)(nEndTime.QuadPart - nBeginTime.QuadPart) / (double)(nFreq.QuadPart);
-	//¼ÆËã³ÌĞòÖ´ĞĞÊ±¼äµ¥Î»ÎªÃëÊı  
-	out << "ÔËĞĞÊ±¼ä£º" << t * 1000 << "ms" << endl;
+	//è®¡ç®—ç¨‹åºæ‰§è¡Œæ—¶é—´å•ä½ä¸ºç§’æ•°  
+	out << "è¿è¡Œæ—¶é—´ï¼š" << t * 1000 << "ms" << endl;
 	return 0;
 }
