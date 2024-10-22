@@ -119,7 +119,7 @@ int main()
 	if (pos > -1) out << pos<<endl;
 	else out << "no"<<endl;
 	gettimeofday(&eTime, NULL);
-	//sleep(2); sleep函数占据的时间不会被clock或者gettimeofday函数所算入
+	//sleep(2); sleep鍑芥暟鍗犳嵁鐨勬椂闂翠笉浼氳clock鎴栬�単ettimeofday鍑芥暟鎵�绠楀叆
 	long exeTime = (eTime.tv_sec - sTime.tv_sec) * 1000000 + (eTime.tv_usec - sTime.tv_usec);
 	double extime = static_cast<double> (exeTime);
 	out << "gettimeofday  " << extime/1000 << "ms" << endl;
