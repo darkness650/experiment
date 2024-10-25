@@ -156,7 +156,7 @@ int main()
 	else out << "no" << endl;
 	QueryPerformanceCounter(&nEndTime);
 	t = (double)(nEndTime.QuadPart - nBeginTime.QuadPart) / (double)(nFreq.QuadPart);
-	//¼ÆËã³ÌĞòÖ´ĞĞÊ±¼äµ¥Î»ÎªÃëÊı  
+	//è®¡ç®—ç¨‹åºæ‰§è¡Œæ—¶é—´å•ä½ä¸ºç§’æ•°  
 	out << "gettimeofday  " << t * 1000 << "ms" << endl;
 	QueryPerformanceFrequency(&nFreq);
 	QueryPerformanceCounter(&nBeginTime);
@@ -165,7 +165,7 @@ int main()
 	else out << position;
 	QueryPerformanceCounter(&nEndTime);
 	t = (double)(nEndTime.QuadPart - nBeginTime.QuadPart) / (double)(nFreq.QuadPart);
-	//¼ÆËã³ÌĞòÖ´ĞĞÊ±¼äµ¥Î»ÎªÃëÊı  
+	//è®¡ç®—ç¨‹åºæ‰§è¡Œæ—¶é—´å•ä½ä¸ºç§’æ•°  
 	out <<endl<< "runtime:" << t * 1000 << "ms" << endl;
 	return 0;
 }
