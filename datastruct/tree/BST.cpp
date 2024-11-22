@@ -19,27 +19,27 @@ public:
 		if (!i)return;
 		if (i->parent)
 		{
-			cout << i->key << "µÄ¸¸Ç×ÊÇ" << i->parent->key;
+			cout << i->key << "çš„çˆ¶äº²æ˜¯" << i->parent->key;
 			if (i->left)
-				cout << "£¬×ó¶ù×ÓÊÇ" << i->left->key;
+				cout << "ï¼Œå·¦å„¿å­æ˜¯" << i->left->key;
 			else
-				cout << "£¬Ã»ÓĞ×ó¶ù×Ó";
+				cout << "ï¼Œæ²¡æœ‰å·¦å„¿å­";
 			if (i->right)
-				cout << "£¬ÓÒ¶ù×ÓÊÇ" << i->right->key;
+				cout << "ï¼Œå³å„¿å­æ˜¯" << i->right->key;
 			else
-				cout << "£¬Ã»ÓĞÓÒ¶ù×Ó";
+				cout << "ï¼Œæ²¡æœ‰å³å„¿å­";
 		}
 		if (!i->parent)
 		{
-			cout << i->key << "Ã»ÓĞ¸¸Ç×";
+			cout << i->key << "æ²¡æœ‰çˆ¶äº²";
 			if (i->left)
-				cout << "£¬×ó¶ù×ÓÊÇ" << i->left->key;
+				cout << "ï¼Œå·¦å„¿å­æ˜¯" << i->left->key;
 			else
-				cout << "£¬Ã»ÓĞ×ó¶ù×Ó";
+				cout << "ï¼Œæ²¡æœ‰å·¦å„¿å­";
 			if (i->right)
-				cout << "£¬ÓÒ¶ù×ÓÊÇ" << i->right->key;
+				cout << "ï¼Œå³å„¿å­æ˜¯" << i->right->key;
 			else
-				cout << "£¬Ã»ÓĞÓÒ¶ù×Ó";
+				cout << "ï¼Œæ²¡æœ‰å³å„¿å­";
 		}
 		cout << endl;
 		display(i->left);
@@ -232,7 +232,7 @@ int main()
 	}
 	QueryPerformanceCounter(&nEndTime);
 	t = (double)(nEndTime.QuadPart - nBeginTime.QuadPart) / (double)(nFreq.QuadPart);
-	//¼ÆËã³ÌĞòÖ´ĞĞÊ±¼äµ¥Î»ÎªÃëÊı  
+	//è®¡ç®—ç¨‹åºæ‰§è¡Œæ—¶é—´å•ä½ä¸ºç§’æ•°  
 	o << "gettimeofday  " << t * 1000 << "ms" << endl;
 	o << "search:" << endl;
 	QueryPerformanceFrequency(&nFreq);
@@ -253,7 +253,7 @@ int main()
 	}
 	QueryPerformanceCounter(&nEndTime);
 	t = (double)(nEndTime.QuadPart - nBeginTime.QuadPart) / (double)(nFreq.QuadPart);
-	//¼ÆËã³ÌĞòÖ´ĞĞÊ±¼äµ¥Î»ÎªÃëÊı  
+	//è®¡ç®—ç¨‹åºæ‰§è¡Œæ—¶é—´å•ä½ä¸ºç§’æ•°  
 	o << "gettimeofday  " << t * 1000 << "ms" << endl;
 	return 0;
 }
