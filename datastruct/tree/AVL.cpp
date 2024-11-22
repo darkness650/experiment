@@ -256,7 +256,7 @@ bool ifbinary(AVL* root)
 		}
 		else {
 			if (foundNull) {
-				// Ò»µ©Óöµ½¿Õ½ÚµãºóµÄ·Ç¿Õ½Úµã£¬ËµÃ÷²»ÊÇÍêÈ«¶ş²æÊ÷
+				// ä¸€æ—¦é‡åˆ°ç©ºèŠ‚ç‚¹åçš„éç©ºèŠ‚ç‚¹ï¼Œè¯´æ˜ä¸æ˜¯å®Œå…¨äºŒå‰æ ‘
 				return false;
 			}
 			queue.push(cur->left);
@@ -264,8 +264,8 @@ bool ifbinary(AVL* root)
 		}
 	}
 
-	// ÎŞĞèÔÙ¶îÍâ¼ì²é¶ÓÁĞ£¬ÒòÎªÔÚÓöµ½¿Õ½ÚµãÊ±¾ÍÒÑ¾­½«`foundNull`ÉèÖÃÎªtrue£¬
-	// ²¢ÇÒºóĞøÓöµ½·Ç¿Õ½Úµã»áÁ¢¼´·µ»Øfalse¡£Èç¹ûÑ­»·Õı³£½áÊø£¬ËµÃ÷ÊÇÍêÈ«¶ş²æÊ÷¡£
+	// æ— éœ€å†é¢å¤–æ£€æŸ¥é˜Ÿåˆ—ï¼Œå› ä¸ºåœ¨é‡åˆ°ç©ºèŠ‚ç‚¹æ—¶å°±å·²ç»å°†`foundNull`è®¾ç½®ä¸ºtrueï¼Œ
+	// å¹¶ä¸”åç»­é‡åˆ°éç©ºèŠ‚ç‚¹ä¼šç«‹å³è¿”å›falseã€‚å¦‚æœå¾ªç¯æ­£å¸¸ç»“æŸï¼Œè¯´æ˜æ˜¯å®Œå…¨äºŒå‰æ ‘ã€‚
 	return true;
 }
 
@@ -333,7 +333,7 @@ int main()
 	}
 	QueryPerformanceCounter(&nEndTime);
 	t = (double)(nEndTime.QuadPart - nBeginTime.QuadPart) / (double)(nFreq.QuadPart);
-	//¼ÆËã³ÌĞòÖ´ĞĞÊ±¼äµ¥Î»ÎªÃëÊı  
+	//è®¡ç®—ç¨‹åºæ‰§è¡Œæ—¶é—´å•ä½ä¸ºç§’æ•°  
 	o << "gettimeofday  " << t * 1000 << "ms" << endl;
 	o << "search:" << endl;
 	QueryPerformanceFrequency(&nFreq);
