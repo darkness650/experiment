@@ -3,5 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Calculater/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Calculater/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Java_Reflect/proxy/ProxyTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/src/main/java/org/example/cdshop/GetInThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/src/main/java/org/example/cdshop/SoldCD.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/src/main/java/org/example/cdshop/SoldThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/src/main/resources" charset="UTF-8" />
   </component>
 </project>
